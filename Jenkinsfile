@@ -1,4 +1,3 @@
-def gv
 pipeline{
     agent any
     tools{
@@ -7,9 +6,7 @@ pipeline{
     stages{
         stage("Git checkOut"){
             steps{
-                script{
-                    gv = load "script.groovy"
-                }
+                echo "TESTING WEBHOOKS WITH NGROK"
             }
         }
     }

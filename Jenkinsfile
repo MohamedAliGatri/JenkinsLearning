@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Git checkOut"){
             steps{
-                echo "TESTING WEBHOOKS WITH NGROK"
+                echo "TESTING WEBHOOKS WITH NGROK again"
             }
         }
     }

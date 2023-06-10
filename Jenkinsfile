@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        maven "MAVEN_HOME"
+        maven "MAVEN"
     }
     stages{
         stage("Git checkOut"){
@@ -9,5 +9,11 @@ pipeline{
                 echo "TESTING WEBHOOKS WITH NGROK again"
             }
         }
+        stage("SonarTest"){
+            steps{
+                sh "mvn sonar:sonar"
+            }
+        }
     }
+    
 }

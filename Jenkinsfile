@@ -9,7 +9,7 @@ pipeline{
                 echo "TESTING WEBHOOKS WITH NGROK again"
             }
         }
-        stage("SonarTest"){
+        stage("SonarTest integration"){
             steps{
                 sh "mvn sonar:sonar"
             }
